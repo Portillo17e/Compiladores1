@@ -1,0 +1,64 @@
+{
+  "codigo_fuente": "\nint suma(int a , int b){\n    int c = a + b;\n    return c;\n}\n\nvoid main(){\n    suma(4,5);\n}\n",
+  "AST": {
+    "tipo": "Programa",
+    "valor": null,
+    "hijos": [
+      {
+        "tipo": "Funcion",
+        "valor": "suma",
+        "hijos": [
+          {
+            "tipo": "Parametros",
+            "valor": null,
+            "hijos": [
+              {
+                "tipo": "Parametro",
+                "valor": "int a",
+                "hijos": []
+              },
+              {
+                "tipo": "Parametro",
+                "valor": "int b",
+                "hijos": []
+              }
+            ]
+          },
+          {
+            "tipo": "Cuerpo",
+            "valor": null,
+            "hijos": [
+              {
+                "tipo": "Declaracion",
+                "valor": "int c = a + b",
+                "hijos": []
+              },
+              {
+                "tipo": "Return",
+                "valor": "c",
+                "hijos": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "Funcion",
+        "valor": "main",
+        "hijos": [
+          {
+            "tipo": "Cuerpo",
+            "valor": null,
+            "hijos": [
+              {
+                "tipo": "Llamada",
+                "valor": "suma(4,5)",
+                "hijos": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
